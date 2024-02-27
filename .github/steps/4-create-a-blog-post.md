@@ -1,7 +1,7 @@
 <!--
   <<< Author notes: Step 4 >>>
   Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
+  Define terms and link to assets.github.com.
   Historic note: previous version checked the file path. Previous version checked the front matter formatting.
 -->
 
