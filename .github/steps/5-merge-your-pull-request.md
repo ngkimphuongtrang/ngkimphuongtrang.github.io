@@ -1,7 +1,7 @@
 <!--
   <<< Author notes: Step 5 >>>
   Start this step by acknowledging the previous step.
-  Define terms and link to assets.github.com.
+  Define terms and link to images.github.com.
 -->
 
 ## Step 5: Merge your pull request
