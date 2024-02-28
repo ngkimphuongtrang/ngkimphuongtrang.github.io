@@ -15,10 +15,8 @@ TestFlight makes it easy to invite users to test your apps and App Clips and col
 
 Admin can create a group and add up to 100 internal tester to test the app using TestFlight. Admin can choose to automatically distribute builds to internal groups or add them manually.
 
-2.You receive an invitation email to join the development team from Apple Developer.
-![invitation-email](https://ibb.co/0MFZdcj)
-
-[//]: # (![invitation-email]&#40;/images/2024-02-27-invitation-email.png&#41;)
+2. You receive an invitation email to join the development team from Apple Developer.
+![invitation-email](/images/2024-02-27-invitation-email.png)
 
 3. Click _Accept invitation_ in email content. New window will open. You fill form Create Your Apple ID, with organization email, your active phone number to verify the account. Click Continue after completing the form.
 
