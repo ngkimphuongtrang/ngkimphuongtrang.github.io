@@ -14,15 +14,17 @@ func (j *Job) Execute(ctx context.Context){
 		item.StatusCode = response.StatusCode
 		if err != nil || (response.StatusCode != http.StatusOK && response.StatusCode != http.StatusNotFound){
 			
-        } else if response.StatusCode == http.StatusNotFound{
+                } else if response.StatusCode == http.StatusNotFound{
 			
-        } else{
+                } else{
 			
-        }               
-    }   
+                }               
+        }   
 }
 ```
-To avoid repeatedly assigning response.StatusCode to item.StatusCode in every conditional block, I opted to assign the value once at an earlier point. Unfortunately, this change led to unintended consequences. After several weeks of stable operation in production, the server began to experience issues under high load, with some API requests timing out, leading to net/http: request canceled (Client.Timeout exceeded while awaiting headers) errors. Consequently, the production application encountered a runtime error, causing it to malfunction.
+To avoid repeatedly assigning `response.StatusCode` to `item.StatusCode` in every conditional block, I opted to assign the value once at an earlier point. 
+Unfortunately, this change led to unintended consequences. After several weeks of stable operation in production, the server began to experience issues under high load, with some API requests timing out, leading to `net/http: request canceled (Client.Timeout exceeded while awaiting headers)` errors. 
+Consequently, the production application encountered a runtime error, causing it to malfunction.
 ### How I fixed the problem?
 Add a check nil object before accessing their value
 ```go 
