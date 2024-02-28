@@ -1,9 +1,8 @@
 ---
 title: "How to join TestFlight in an organization"
 date: 2024-02-27
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/images/2024-02-27-home.png'>"
-
 ---
+
 ## Motivation
 This tutorial guides you step by step to access the app in an organization using TestFlight.
 
