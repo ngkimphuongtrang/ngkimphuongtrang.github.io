@@ -1,6 +1,6 @@
 ---
 title: "Database system concepts told by pictures"
-date: 2024-03-13
+date: 2024-03-12
 ---
 
 # Three levels of data abstraction
