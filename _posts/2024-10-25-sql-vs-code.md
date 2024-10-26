@@ -1,6 +1,6 @@
 ---
 title: "[G] Finding Emails Appearing in Multiple Countries: SQL vs. Code"
-date: 2024-02-26
+date: 2024-10-25
 ---
 
 In this post, we will tackle a common data processing task: identifying email addresses that appear in more than one country. We will explore two approaches to solving this problem: using SQL and using code.
