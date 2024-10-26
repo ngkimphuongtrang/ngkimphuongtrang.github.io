@@ -126,13 +126,14 @@ defer file.Close()
 	}
 }
 ```
+
 #### Explanation
 1. Reading the CSV File: The file is opened and read using the encoding/csv package. We handle any errors that may occur during this process.
 2. Mapping Emails to Countries: We create a map emailToCountries where the key is the email address and the value is another map (used as a set) to store the countries.
 3. Processing Each Record: We split the email addresses by commas and populate the emailToCountries map with each email and its corresponding country.
 4. Finding Emails in Multiple Countries: Finally, we iterate over the map to find and print email addresses that appear in more than one site_country.
 
-## Analysis: SQL vs. Go
+## Analysis: SQL vs. Code
 ### SQL Approach
 #### Advantages:
 

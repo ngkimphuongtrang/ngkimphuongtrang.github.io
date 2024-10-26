@@ -59,7 +59,7 @@ type OutputRow struct {
 	UpdatedAt        time.Time `json:"updated_at"`
 }
 
-func (s *BacktestStore) CreateManyOutputRows(ctx context.Context, outputRows []*OutputRow) error {
+func (s *Store) CreateManyOutputRows(ctx context.Context, outputRows []*OutputRow) error {
 	var valueStrings []string
 	var valueArgs []interface{}
 
@@ -109,7 +109,7 @@ type OutputRow struct {
 	UpdatedAt        time.Time `json:"updated_at"`
 }
 
-func (s *BacktestStore) CreateManyOutputRows(ctx context.Context, outputRows []*OutputRow) error {
+func (s *Store) CreateManyOutputRows(ctx context.Context, outputRows []*OutputRow) error {
 	var valueStrings []string
 	var valueArgs []interface{}
 
