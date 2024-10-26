@@ -1,5 +1,5 @@
 ---
-title: "How to join TestFlight in an organization"
+title: "[T] How to join TestFlight in an organization"
 date: 2024-02-27
 ---
 
