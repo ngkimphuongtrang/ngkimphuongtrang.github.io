@@ -33,6 +33,7 @@ Despite the challenges, it is possible to solve this problem using SQL with the 
 1. Split the Email Addresses: Use a recursive CTE to split the comma-separated email addresses into individual rows.
 2. Map Emails to Countries: Create a mapping of emails to their respective countries.
 3. Identify Emails in Multiple Countries: Group by email and count the distinct countries.
+
 ```sql
 WITH RECURSIVE EmailSplit AS (
     SELECT
@@ -54,6 +55,7 @@ FROM EmailSplit
 GROUP BY email
 HAVING COUNT(DISTINCT site_country) > 1;
 ```
+
 #### Explanation
 1. EmailSplit CTE: This recursive CTE splits the person_email_address column into individual email addresses.
 2. Mapping Emails to Countries: The result of the CTE is a mapping of each email to its corresponding site_country.
@@ -66,6 +68,7 @@ To overcome the limitations of SQL, we can download the data into a CSV file and
 1. Read the CSV File: Use the encoding/csv package to read the CSV file.
 2. Process Each Record: Split the email addresses by commas and map them to their respective countries.
 3. Identify Emails in Multiple Countries: Check the map to find email addresses that appear in more than one country.
+
 ```go
 package main
 
@@ -125,6 +128,20 @@ defer file.Close()
 		}
 	}
 }
+```
+
+The output when runs the code is:
+
+```
+Email: _@nosyn.com appears in countries: United Kingdom, Singapore, 
+Email: _@alocacoc.com appears in countries: Myanmar, Singapore, 
+Email: _@eepohs.com appears in countries: Singapore, Indonesia, Malaysia, 
+Email: _@aidemsicilbub.com appears in countries: Vietnam, Singapore, 
+Email: _@alocacoc.com appears in countries: Singapore, Malaysia, 
+Email: _@sivamyks.com appears in countries: Singapore, Indonesia, 
+Email: _@erauqsekcric.com appears in countries: Hong Kong, Singapore, 
+Email: _@sucofeulb.com appears in countries: Singapore, Hong Kong, 
+Email: _@mh.com appears in countries: Malaysia, Singapore, 
 ```
 
 #### Explanation
